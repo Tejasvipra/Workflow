@@ -11,3 +11,8 @@ jobs:
         run: echo "this is user"
       - name: say hello to username
         run: echo "this is my $user"
+  mynewjob:
+    runs-on: linux-rocky
+    steps:
+      - name: git checkout
+        run: echo "my name is $"
