@@ -3,7 +3,7 @@ name: workflows
 on:
   workflow_dispatch: 
 jobs:
-  jobname:
+  jobname: 
     runs-on: ubuntu-latest
     steps:
       - name: user
@@ -11,6 +11,7 @@ jobs:
       - name: say hello to username
         run: echo "this is my $user"
   mynewjob:
+    needs: jobname   
     runs-on: ubuntu-latest
     steps:
       - name: git checkout
