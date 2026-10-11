@@ -12,7 +12,7 @@ jobs:
       - name: say hello to username
         run: echo "this is my $user"
   mynewjob:
-    runs-on: linux-rocky
+    runs-on: rockylinux:9
     steps:
       - name: git checkout
         run: echo "my name is $"
