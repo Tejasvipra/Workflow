@@ -1,0 +1,12 @@
+name: workflows
+on:
+  push:
+    branch:
+      - main
+jobs:
+  jobname: null
+  steps:
+    - name: user
+      run: echo "this is user"
+    - name: say hello to username
+      run: echo "this is my $user"
