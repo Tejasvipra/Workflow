@@ -2,13 +2,13 @@
 name: workflows
 on:
   push:
-    branch:
+    branches:
       - main
 jobs:
-  jobname: null
-  runs-on: ubuntu-latest
-  steps:
-    - name: user
-      run: echo "this is user"
-    - name: say hello to username
-      run: echo "this is my $user"
+  jobname:
+    runs-on: ubuntu-latest
+    steps:
+      - name: user
+        run: echo "this is user"
+      - name: say hello to username
+        run: echo "this is my $user"
