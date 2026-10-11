@@ -1,3 +1,4 @@
+---
 name: workflows
 on:
   push:
@@ -5,6 +6,7 @@ on:
       - main
 jobs:
   jobname: null
+  runs-on: ubuntu-latest
   steps:
     - name: user
       run: echo "this is user"
